@@ -1,0 +1,42 @@
+# Environment Variables (contains sensitive data)
+.env
+*.env
+.env.local
+.env.production
+
+# Application Properties (contains sensitive data)
+application.properties
+application-*.properties
+**/resources/application.properties
+**/resources/application-*.properties
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Build artifacts
+target/
+build/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node modules (if frontend is added later)
+node_modules/
+dist/
+
+# Docker volumes
+mysql_data/
+null

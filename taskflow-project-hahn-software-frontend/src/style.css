@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Space Grotesk", "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  min-height: 100%;
+  --bg: #0b101d;
+  --bg-secondary: rgba(12, 18, 32, 0.8);
+  --panel: rgba(12, 18, 32, 0.7);
+  --panel-border: rgba(255, 255, 255, 0.07);
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --input-border: rgba(255, 255, 255, 0.08);
+}
+
+.theme-light {
+  --bg: #f8fafc;
+  --bg-secondary: #ffffff;
+  --panel: #ffffff;
+  --panel-border: rgba(15, 23, 42, 0.08);
+  --text: #0f172a;
+  --muted: #475569;
+  --input-bg: #ffffff;
+  --input-border: rgba(15, 23, 42, 0.12);
+}
+
+.theme-dark {
+  --bg: #0b101d;
+  --bg-secondary: rgba(12, 18, 32, 0.8);
+  --panel: rgba(12, 18, 32, 0.7);
+  --panel-border: rgba(255, 255, 255, 0.07);
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --input-border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.12), transparent 28%),
+    radial-gradient(circle at 80% 0%, rgba(99, 102, 241, 0.14), transparent 28%),
+    var(--bg);
+  color: var(--text);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.glass-panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+}
+
+.card {
+  @apply p-6;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+}
+
+/* UI helpers using Tailwind's @apply for consistent look */
+.input-field {
+  @apply block w-full rounded-xl px-3 py-2 text-sm transition;
+  background: var(--input-bg);
+  border: 1px solid var(--input-border);
+  color: var(--text);
+  @apply focus:outline-none focus:ring-2 focus:ring-primary-500/60 focus:border-primary-400/60;
+}
+
+/* Fix select dropdown options visibility */
+.input-field option {
+  background: #1a1f2e;
+  color: #e5e7eb;
+  padding: 8px;
+}
+
+.input-field option:hover,
+.input-field option:checked {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 bg-primary-500 text-white px-4 py-2 rounded-xl shadow-lg shadow-primary-500/20;
+  @apply hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-300/60 transition;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-xl;
+  background: var(--input-bg);
+  border: 1px solid var(--panel-border);
+  color: var(--text);
+  @apply hover:bg-white/10 focus:outline-none;
+}
+
+.modal-content {
+  @apply glass-panel;
+}
+
+.member-chip {
+  @apply inline-flex items-center gap-2 bg-white/10 text-gray-100 px-3 py-1 rounded-full text-xs;
+}
+
+.assign-permission {
+  @apply inline-block text-sm px-2 py-0.5 rounded bg-primary-500/10 text-primary-200;
+}
+
+/* Boxed form row used in modals */
+.box-form {
+  @apply bg-white/5 border border-white/10 rounded-lg p-3 flex items-center gap-2;
+}
+
+.btn-primary-sm {
+  @apply inline-flex items-center justify-center gap-1 bg-primary-500 text-white px-3 py-1 rounded-md text-sm;
+  @apply hover:bg-primary-400;
+}
+
+.select-compact {
+  @apply w-24 flex-shrink-0;
+}
+
+.pill {
+  @apply inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wide;
+}
