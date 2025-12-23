@@ -207,15 +207,28 @@ public class TaskServiceImpl implements ITaskService {
     }
 
     private void checkCanUpdateStatus(Task task, User user) {
-        // Fast-path: project owner or task creator can always move status
-        if (task.getProject().getOwner().getId().equals(user.getId())
-                || task.getCreatedBy().getId().equals(user.getId())) {
+        // Fast-path: project owner or task creator can always update status
+        boolean isOwner = task.getProject().getOwner().getId().equals(user.getId());
+        boolean isCreator = task.getCreatedBy().getId().equals(user.getId());
+
+        if (isOwner || isCreator) {
             return;
         }
 
-        // Any project member can update status (lighter-touch permissions for Kanban)
-        // If you need stricter control, re-enable the assignment/role checks here.
-        getMemberOrThrow(task.getProject(), user);
+        // Check project member role permissions
+        ProjectMember member = getMemberOrThrow(task.getProject(), user);
+        if (member.canManageTasks()) {
+            return; // OWNER, ADMIN roles can update status
+        }
+
+        // For MEMBER and VIEWER, check task assignment permissions
+        TaskAssignment assignment = taskAssignmentRepository
+                .findByTaskIdAndAssigneeId(task.getId(), user.getId())
+                .orElse(null);
+
+        if (assignment == null || !assignment.canUpdateStatus()) {
+            throw new ForbiddenException("You don't have permission to update this task status");
+        }
     }
 
     private TaskResponse toTaskResponse(Task task) {

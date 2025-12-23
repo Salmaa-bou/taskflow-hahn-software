@@ -3,16 +3,16 @@
     <div class="hidden lg:flex flex-col justify-center gap-6">
       <div class="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/5 border border-white/10 w-max">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="text-xs text-gray-300 uppercase tracking-[0.25em]">Flow</span>
+        <span class="text-xs text-gray-300 uppercase tracking-[0.25em]">Productivity</span>
       </div>
-      <h1 class="text-5xl font-bold text-white leading-tight">Ship fast with a calm, focused workspace.</h1>
+      <h1 class="text-5xl font-bold text-white leading-tight">Streamline your workflow with TaskFlow.</h1>
       <p class="text-gray-400 text-lg max-w-2xl">
-        A Twitter-inspired, minimal cockpit for tasks, teams, and delivery. Stay in flow, keep context, and move work forward.
+        A modern task management platform that helps teams collaborate efficiently. Organize projects, track progress, and deliver results with intuitive Kanban boards.
       </p>
       <div class="flex items-center gap-3 text-sm text-gray-400">
-        <span class="pill bg-primary-500/10 text-primary-100">Secure SSO-ready</span>
-        <span class="pill bg-white/5 text-gray-200">Kanban first</span>
-        <span class="pill bg-white/5 text-gray-200">Real-time updates</span>
+        <span class="pill bg-primary-500/10 text-primary-100">Secure Authentication</span>
+        <span class="pill bg-white/5 text-gray-200">Role-Based Access</span>
+        <span class="pill bg-white/5 text-gray-200">Drag & Drop</span>
       </div>
     </div>
 

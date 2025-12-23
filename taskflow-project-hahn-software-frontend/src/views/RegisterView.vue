@@ -104,20 +104,20 @@
     <div class="hidden lg:flex flex-col gap-4">
       <div class="inline-flex items-center gap-3 px-3 py-1 rounded-full bg-white/5 border border-white/10 w-max">
         <span class="w-2 h-2 rounded-full bg-primary-400 animate-pulse"></span>
-        <span class="text-xs text-gray-300 uppercase tracking-[0.25em]">Onboard</span>
+        <span class="text-xs text-gray-300 uppercase tracking-[0.25em]">Get Started</span>
       </div>
-      <h1 class="text-5xl font-bold text-white leading-tight">Build together in a sleek, X-inspired canvas.</h1>
+      <h1 class="text-5xl font-bold text-white leading-tight">Join your team on TaskFlow today.</h1>
       <p class="text-gray-400 text-lg max-w-2xl">
-        Kanban, focus mode, and ambient dark styling make your team’s workload feel organized and modern.
+        Create projects, manage tasks with Kanban boards, and collaborate with your team. Powerful features with an elegant, modern interface.
       </p>
       <div class="grid grid-cols-2 gap-3">
         <div class="glass-panel p-4 border border-white/10">
-          <p class="text-sm text-gray-300">Drag & drop tasks</p>
-          <p class="text-xs text-gray-500">Move work across swimlanes with real-time status updates.</p>
+          <p class="text-sm text-gray-300">Kanban Boards</p>
+          <p class="text-xs text-gray-500">Visualize your workflow with drag-and-drop task management across status columns.</p>
         </div>
         <div class="glass-panel p-4 border border-white/10">
-          <p class="text-sm text-gray-300">Assign smarter</p>
-          <p class="text-xs text-gray-500">Pick teammates from your roster or invite via email.</p>
+          <p class="text-sm text-gray-300">Team Collaboration</p>
+          <p class="text-xs text-gray-500">Invite members, assign roles, and manage permissions with ease.</p>
         </div>
       </div>
     </div>
