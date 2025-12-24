@@ -4,6 +4,9 @@
   <img src="./taskflow-project-hahn-software-frontend/public/logo2.png" alt="TaskFlow Logo" width="120" height="120" style="border-radius: 50%;">
 
   <h3>A Modern Full-Stack Task Management Solution</h3>
+  **link of the demo**:
+  (https://drive.google.com/file1Us9smQTnV4ih6unTLfTHY-aiVCgOXGcF/view?usp=drive_link)
+
 
   [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
   [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.0-brightgreen.svg)](https://spring.io/projects/spring-boot)
@@ -969,7 +972,7 @@ This project is created for educational purposes as part of the **Hahn Software 
 
 ## 📧 Contact & Support
 
-**Developed by**: Salma Bouharras
+**Developed by**: Salma Boukhari
 **GitHub**: https://github.com/Salmaa-bou/taskflow_project_hahn_software
 **For questions**: Open an issue in the repository
 
