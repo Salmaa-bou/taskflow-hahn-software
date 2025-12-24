@@ -3,14 +3,14 @@
 <div align="center">
   <img src="./taskflow-project-hahn-software-frontend/public/logo2.png" alt="TaskFlow Logo" width="120" height="120" style="border-radius: 50%;">
 
+
+
   <h3>A Modern Full-Stack Task Management Solution</h3>
-  **link of the demo**:
-  (https://drive.google.com/file1Us9smQTnV4ih6unTLfTHY-aiVCgOXGcF/view?usp=drive_link)
+
+  - DEMO link :
+  https://drive.google.com/file/d/1Us9smQTnV4ih6unTLfTHY-aiVCgOXGcF/view
 
 
-
-
-  </hr>
 
 
   [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/)
