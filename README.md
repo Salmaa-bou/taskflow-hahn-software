@@ -147,7 +147,7 @@ This is the **easiest and fastest** way to run TaskFlow!
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/Salmaa-bou/taskflow_project_hahn_software.git
+git clone https://github.com/Salmaa-bou/taskflow-hahn-software.git
 cd taskflow_project_hahn_software
 ```
 
@@ -986,9 +986,9 @@ This project is created for educational purposes as part of the **Hahn Software 
 <div align="center">
   <p><strong>Built with ❤️ for Hahn Software Internship Program</strong></p>
   <p>
-    <a href="https://github.com/Salmaa-bou/taskflow_project_hahn_software">⭐ Star this repo</a> •
-    <a href="https://github.com/Salmaa-bou/taskflow_project_hahn_software/issues">🐛 Report Bug</a> •
-    <a href="https://github.com/Salmaa-bou/taskflow_project_hahn_software/issues">💡 Request Feature</a>
+    <a href="https://github.com/Salmaa-bou/taskflow-hahn-software">⭐ Star this repo</a> •
+    <a href="https://github.com/Salmaa-bou/taskflow-hahn-software/issues">🐛 Report Bug</a> •
+    <a href="https://github.com/Salmaa-bou/taskflow-hahn-software/issues">💡 Request Feature</a>
   </p>
 </div>
 
