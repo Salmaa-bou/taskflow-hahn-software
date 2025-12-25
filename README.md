@@ -978,7 +978,7 @@ This project is created for educational purposes as part of the **Hahn Software 
 ## 📧 Contact & Support
 
 **Developed by**: Salma Boukhari
-**GitHub**: https://github.com/Salmaa-bou/taskflow_project_hahn_software
+**GitHub**: https://github.com/Salmaa-bou/taskflow-hahn-software
 **For questions**: Open an issue in the repository
 
 ---
